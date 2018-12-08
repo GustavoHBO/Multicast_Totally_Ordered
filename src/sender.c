@@ -20,7 +20,6 @@ main(int argc, char *argv[])
 {
      struct sockaddr_in addr;
      int fd, cnt;
-     struct ip_mreq mreq;
      char *message="Hello, World!";
 
      /* create what looks like an ordinary UDP socket */
@@ -37,6 +36,7 @@ main(int argc, char *argv[])
      
      /* now just sendto() our destination! */
      while (1) {
+         message = "oie";
 	  if (sendto(fd,message,sizeof(message),0,(struct sockaddr *) &addr,
 		     sizeof(addr)) < 0) {
 	       perror("sendto");
