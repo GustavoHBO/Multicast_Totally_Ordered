@@ -20,7 +20,7 @@ BIN_DIR     := $(if $(DEBUG), $(DEBUG_DIR), $(RELEASE_DIR))
 
 # shell command
 CC    := gcc
-CXX   := g++
+CXX   := g++ -std=c++11
 RM    := rm -rf
 MKDIR := mkdir -p
 SED   := sed

@@ -6,7 +6,7 @@ Multicast::Multicast(char *ip, int port)
     {
         perror("Port invalid!");
     }
-    else
+    else  
     {
         ip_group = ip;
         this->port = port;
