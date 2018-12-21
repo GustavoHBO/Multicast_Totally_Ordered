@@ -1,10 +1,12 @@
 #include <iostream>
-#include "./include/Multicast.hpp"
+#include "Multicast.hpp"
 
 int main(int argc, char const *argv[])
 {
-  Multicast m("224.0.0.1", 65534);
-  m.sendMessage("Testando a execução");
+	char msg[] = "Testando a execução";
+	char ip[] = "224.0.0.1"; 
+  Multicast m(ip, 65534);
+  m.sendMessage(msg);
   /* code */
   return 0;
 }

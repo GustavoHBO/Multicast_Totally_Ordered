@@ -1,4 +1,4 @@
-#include "./include/Multicast.hpp"
+#include "Multicast.hpp"
 
 Multicast::Multicast(char *ip, int port)
 {

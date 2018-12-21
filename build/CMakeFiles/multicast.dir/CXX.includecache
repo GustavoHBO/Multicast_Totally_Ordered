@@ -1,0 +1,36 @@
+#IncludeRegexLine: ^[ 	]*#[ 	]*(include|import)[ 	]*[<"]([^">]+)([">])
+
+#IncludeRegexScan: ^.*$
+
+#IncludeRegexComplain: ^$
+
+#IncludeRegexTransform: 
+
+/home/gautnote/Documents/Workspace/C++/Multicast_Totally_Ordered/include/Multicast.hpp
+sys/types.h
+-
+sys/socket.h
+-
+netinet/in.h
+-
+arpa/inet.h
+-
+stdio.h
+-
+stdlib.h
+-
+string.h
+-
+unistd.h
+-
+
+/home/gautnote/Documents/Workspace/C++/Multicast_Totally_Ordered/src/Multicast.cpp
+../include/Multicast.hpp
+/home/gautnote/Documents/Workspace/C++/Multicast_Totally_Ordered/include/Multicast.hpp
+
+/home/gautnote/Documents/Workspace/C++/Multicast_Totally_Ordered/src/main.cpp
+iostream
+-
+./include/Multicast.hpp
+/home/gautnote/Documents/Workspace/C++/Multicast_Totally_Ordered/src/./include/Multicast.hpp
+
