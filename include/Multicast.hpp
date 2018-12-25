@@ -5,15 +5,18 @@
 #include <stdio.h>      /* for printf() */
 #include <stdlib.h>     /* for atoi() */
 #include <string.h>     /* for strlen() */
+#ifndef MULTICAST_H
+#define MULTICAST_H
+
 #include <unistd.h>     /* for close() */
 
 class Multicast
 {
   private:
     /* data */
-    const int MIN_PORT = 1024;
-    const int MAX_PORT = 65535;
-    const int MAX_BUFFER_SIZE = 256;
+    static const int MIN_PORT = 1024;
+    static const int MAX_PORT = 65535;
+    static const int MAX_BUFFER_SIZE = 256;
     char *ip_group;
     int port, addrlen, nbytes;
     struct sockaddr_in address;
@@ -27,3 +30,5 @@ class Multicast
     int sendMessage(char *message);
     char *receiveMessage();
 };
+
+#endif

@@ -123,33 +123,6 @@ multicast/fast:
 	$(MAKE) -f CMakeFiles/multicast.dir/build.make CMakeFiles/multicast.dir/build
 .PHONY : multicast/fast
 
-src/Multicast.o: src/Multicast.cpp.o
-
-.PHONY : src/Multicast.o
-
-# target to build an object file
-src/Multicast.cpp.o:
-	$(MAKE) -f CMakeFiles/multicast.dir/build.make CMakeFiles/multicast.dir/src/Multicast.cpp.o
-.PHONY : src/Multicast.cpp.o
-
-src/Multicast.i: src/Multicast.cpp.i
-
-.PHONY : src/Multicast.i
-
-# target to preprocess a source file
-src/Multicast.cpp.i:
-	$(MAKE) -f CMakeFiles/multicast.dir/build.make CMakeFiles/multicast.dir/src/Multicast.cpp.i
-.PHONY : src/Multicast.cpp.i
-
-src/Multicast.s: src/Multicast.cpp.s
-
-.PHONY : src/Multicast.s
-
-# target to generate assembly for a file
-src/Multicast.cpp.s:
-	$(MAKE) -f CMakeFiles/multicast.dir/build.make CMakeFiles/multicast.dir/src/Multicast.cpp.s
-.PHONY : src/Multicast.cpp.s
-
 src/main.o: src/main.cpp.o
 
 .PHONY : src/main.o
@@ -186,9 +159,6 @@ help:
 	@echo "... edit_cache"
 	@echo "... rebuild_cache"
 	@echo "... multicast"
-	@echo "... src/Multicast.o"
-	@echo "... src/Multicast.i"
-	@echo "... src/Multicast.s"
 	@echo "... src/main.o"
 	@echo "... src/main.i"
 	@echo "... src/main.s"

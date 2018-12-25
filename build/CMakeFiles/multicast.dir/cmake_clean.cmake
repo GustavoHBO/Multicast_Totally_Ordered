@@ -1,5 +1,4 @@
 file(REMOVE_RECURSE
-  "CMakeFiles/multicast.dir/src/Multicast.cpp.o"
   "CMakeFiles/multicast.dir/src/main.cpp.o"
   "multicast.pdb"
   "multicast"
