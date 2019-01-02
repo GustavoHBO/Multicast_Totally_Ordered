@@ -5,13 +5,14 @@
 
 class Message
 {
-private:
+  private:
     /* data */
     char *sender;
     char *destination;
     char *message;
     char *date;
-public:
+
+  public:
     Message(/* args */);
     ~Message();
     void setSender(char *sender);

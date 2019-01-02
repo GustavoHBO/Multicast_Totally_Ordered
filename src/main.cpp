@@ -1,9 +1,10 @@
 #include <iostream>
 #include "Teste.hpp"
 
-int main(int argc, char const *argv[])
+int main(int argc, char *argv[])
 {
-  Teste t;
   /* code */
+  Teste t;
+  t.teste_03(argc, argv);
   return 0;
 }

@@ -18,5 +18,4 @@ class Chat
     void addMessage(Message m);
     Message *getMessage(int id);
 };
-
 #endif

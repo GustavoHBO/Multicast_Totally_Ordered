@@ -57,9 +57,81 @@ include CMakeFiles/multicast.dir/progress.make
 # Include the compile flags for this target's objects.
 include CMakeFiles/multicast.dir/flags.make
 
+CMakeFiles/multicast.dir/src/Teste.cpp.o: CMakeFiles/multicast.dir/flags.make
+CMakeFiles/multicast.dir/src/Teste.cpp.o: ../src/Teste.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/gautnote/Documents/Workspace/C++/Multicast_Totally_Ordered/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building CXX object CMakeFiles/multicast.dir/src/Teste.cpp.o"
+	/usr/bin/c++   $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/multicast.dir/src/Teste.cpp.o -c /home/gautnote/Documents/Workspace/C++/Multicast_Totally_Ordered/src/Teste.cpp
+
+CMakeFiles/multicast.dir/src/Teste.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/multicast.dir/src/Teste.cpp.i"
+	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/gautnote/Documents/Workspace/C++/Multicast_Totally_Ordered/src/Teste.cpp > CMakeFiles/multicast.dir/src/Teste.cpp.i
+
+CMakeFiles/multicast.dir/src/Teste.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/multicast.dir/src/Teste.cpp.s"
+	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/gautnote/Documents/Workspace/C++/Multicast_Totally_Ordered/src/Teste.cpp -o CMakeFiles/multicast.dir/src/Teste.cpp.s
+
+CMakeFiles/multicast.dir/src/Teste.cpp.o.requires:
+
+.PHONY : CMakeFiles/multicast.dir/src/Teste.cpp.o.requires
+
+CMakeFiles/multicast.dir/src/Teste.cpp.o.provides: CMakeFiles/multicast.dir/src/Teste.cpp.o.requires
+	$(MAKE) -f CMakeFiles/multicast.dir/build.make CMakeFiles/multicast.dir/src/Teste.cpp.o.provides.build
+.PHONY : CMakeFiles/multicast.dir/src/Teste.cpp.o.provides
+
+CMakeFiles/multicast.dir/src/Teste.cpp.o.provides.build: CMakeFiles/multicast.dir/src/Teste.cpp.o
+
+
+CMakeFiles/multicast.dir/src/Multicast.cpp.o: CMakeFiles/multicast.dir/flags.make
+CMakeFiles/multicast.dir/src/Multicast.cpp.o: ../src/Multicast.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/gautnote/Documents/Workspace/C++/Multicast_Totally_Ordered/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Building CXX object CMakeFiles/multicast.dir/src/Multicast.cpp.o"
+	/usr/bin/c++   $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/multicast.dir/src/Multicast.cpp.o -c /home/gautnote/Documents/Workspace/C++/Multicast_Totally_Ordered/src/Multicast.cpp
+
+CMakeFiles/multicast.dir/src/Multicast.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/multicast.dir/src/Multicast.cpp.i"
+	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/gautnote/Documents/Workspace/C++/Multicast_Totally_Ordered/src/Multicast.cpp > CMakeFiles/multicast.dir/src/Multicast.cpp.i
+
+CMakeFiles/multicast.dir/src/Multicast.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/multicast.dir/src/Multicast.cpp.s"
+	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/gautnote/Documents/Workspace/C++/Multicast_Totally_Ordered/src/Multicast.cpp -o CMakeFiles/multicast.dir/src/Multicast.cpp.s
+
+CMakeFiles/multicast.dir/src/Multicast.cpp.o.requires:
+
+.PHONY : CMakeFiles/multicast.dir/src/Multicast.cpp.o.requires
+
+CMakeFiles/multicast.dir/src/Multicast.cpp.o.provides: CMakeFiles/multicast.dir/src/Multicast.cpp.o.requires
+	$(MAKE) -f CMakeFiles/multicast.dir/build.make CMakeFiles/multicast.dir/src/Multicast.cpp.o.provides.build
+.PHONY : CMakeFiles/multicast.dir/src/Multicast.cpp.o.provides
+
+CMakeFiles/multicast.dir/src/Multicast.cpp.o.provides.build: CMakeFiles/multicast.dir/src/Multicast.cpp.o
+
+
+CMakeFiles/multicast.dir/src/View.cpp.o: CMakeFiles/multicast.dir/flags.make
+CMakeFiles/multicast.dir/src/View.cpp.o: ../src/View.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/gautnote/Documents/Workspace/C++/Multicast_Totally_Ordered/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Building CXX object CMakeFiles/multicast.dir/src/View.cpp.o"
+	/usr/bin/c++   $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/multicast.dir/src/View.cpp.o -c /home/gautnote/Documents/Workspace/C++/Multicast_Totally_Ordered/src/View.cpp
+
+CMakeFiles/multicast.dir/src/View.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/multicast.dir/src/View.cpp.i"
+	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/gautnote/Documents/Workspace/C++/Multicast_Totally_Ordered/src/View.cpp > CMakeFiles/multicast.dir/src/View.cpp.i
+
+CMakeFiles/multicast.dir/src/View.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/multicast.dir/src/View.cpp.s"
+	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/gautnote/Documents/Workspace/C++/Multicast_Totally_Ordered/src/View.cpp -o CMakeFiles/multicast.dir/src/View.cpp.s
+
+CMakeFiles/multicast.dir/src/View.cpp.o.requires:
+
+.PHONY : CMakeFiles/multicast.dir/src/View.cpp.o.requires
+
+CMakeFiles/multicast.dir/src/View.cpp.o.provides: CMakeFiles/multicast.dir/src/View.cpp.o.requires
+	$(MAKE) -f CMakeFiles/multicast.dir/build.make CMakeFiles/multicast.dir/src/View.cpp.o.provides.build
+.PHONY : CMakeFiles/multicast.dir/src/View.cpp.o.provides
+
+CMakeFiles/multicast.dir/src/View.cpp.o.provides.build: CMakeFiles/multicast.dir/src/View.cpp.o
+
+
 CMakeFiles/multicast.dir/src/main.cpp.o: CMakeFiles/multicast.dir/flags.make
 CMakeFiles/multicast.dir/src/main.cpp.o: ../src/main.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/gautnote/Documents/Workspace/C++/Multicast_Totally_Ordered/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building CXX object CMakeFiles/multicast.dir/src/main.cpp.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/gautnote/Documents/Workspace/C++/Multicast_Totally_Ordered/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_4) "Building CXX object CMakeFiles/multicast.dir/src/main.cpp.o"
 	/usr/bin/c++   $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/multicast.dir/src/main.cpp.o -c /home/gautnote/Documents/Workspace/C++/Multicast_Totally_Ordered/src/main.cpp
 
 CMakeFiles/multicast.dir/src/main.cpp.i: cmake_force
@@ -81,17 +153,75 @@ CMakeFiles/multicast.dir/src/main.cpp.o.provides: CMakeFiles/multicast.dir/src/m
 CMakeFiles/multicast.dir/src/main.cpp.o.provides.build: CMakeFiles/multicast.dir/src/main.cpp.o
 
 
+CMakeFiles/multicast.dir/src/Message.cpp.o: CMakeFiles/multicast.dir/flags.make
+CMakeFiles/multicast.dir/src/Message.cpp.o: ../src/Message.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/gautnote/Documents/Workspace/C++/Multicast_Totally_Ordered/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_5) "Building CXX object CMakeFiles/multicast.dir/src/Message.cpp.o"
+	/usr/bin/c++   $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/multicast.dir/src/Message.cpp.o -c /home/gautnote/Documents/Workspace/C++/Multicast_Totally_Ordered/src/Message.cpp
+
+CMakeFiles/multicast.dir/src/Message.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/multicast.dir/src/Message.cpp.i"
+	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/gautnote/Documents/Workspace/C++/Multicast_Totally_Ordered/src/Message.cpp > CMakeFiles/multicast.dir/src/Message.cpp.i
+
+CMakeFiles/multicast.dir/src/Message.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/multicast.dir/src/Message.cpp.s"
+	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/gautnote/Documents/Workspace/C++/Multicast_Totally_Ordered/src/Message.cpp -o CMakeFiles/multicast.dir/src/Message.cpp.s
+
+CMakeFiles/multicast.dir/src/Message.cpp.o.requires:
+
+.PHONY : CMakeFiles/multicast.dir/src/Message.cpp.o.requires
+
+CMakeFiles/multicast.dir/src/Message.cpp.o.provides: CMakeFiles/multicast.dir/src/Message.cpp.o.requires
+	$(MAKE) -f CMakeFiles/multicast.dir/build.make CMakeFiles/multicast.dir/src/Message.cpp.o.provides.build
+.PHONY : CMakeFiles/multicast.dir/src/Message.cpp.o.provides
+
+CMakeFiles/multicast.dir/src/Message.cpp.o.provides.build: CMakeFiles/multicast.dir/src/Message.cpp.o
+
+
+CMakeFiles/multicast.dir/src/Chat.cpp.o: CMakeFiles/multicast.dir/flags.make
+CMakeFiles/multicast.dir/src/Chat.cpp.o: ../src/Chat.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/gautnote/Documents/Workspace/C++/Multicast_Totally_Ordered/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_6) "Building CXX object CMakeFiles/multicast.dir/src/Chat.cpp.o"
+	/usr/bin/c++   $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/multicast.dir/src/Chat.cpp.o -c /home/gautnote/Documents/Workspace/C++/Multicast_Totally_Ordered/src/Chat.cpp
+
+CMakeFiles/multicast.dir/src/Chat.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/multicast.dir/src/Chat.cpp.i"
+	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/gautnote/Documents/Workspace/C++/Multicast_Totally_Ordered/src/Chat.cpp > CMakeFiles/multicast.dir/src/Chat.cpp.i
+
+CMakeFiles/multicast.dir/src/Chat.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/multicast.dir/src/Chat.cpp.s"
+	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/gautnote/Documents/Workspace/C++/Multicast_Totally_Ordered/src/Chat.cpp -o CMakeFiles/multicast.dir/src/Chat.cpp.s
+
+CMakeFiles/multicast.dir/src/Chat.cpp.o.requires:
+
+.PHONY : CMakeFiles/multicast.dir/src/Chat.cpp.o.requires
+
+CMakeFiles/multicast.dir/src/Chat.cpp.o.provides: CMakeFiles/multicast.dir/src/Chat.cpp.o.requires
+	$(MAKE) -f CMakeFiles/multicast.dir/build.make CMakeFiles/multicast.dir/src/Chat.cpp.o.provides.build
+.PHONY : CMakeFiles/multicast.dir/src/Chat.cpp.o.provides
+
+CMakeFiles/multicast.dir/src/Chat.cpp.o.provides.build: CMakeFiles/multicast.dir/src/Chat.cpp.o
+
+
 # Object files for target multicast
 multicast_OBJECTS = \
-"CMakeFiles/multicast.dir/src/main.cpp.o"
+"CMakeFiles/multicast.dir/src/Teste.cpp.o" \
+"CMakeFiles/multicast.dir/src/Multicast.cpp.o" \
+"CMakeFiles/multicast.dir/src/View.cpp.o" \
+"CMakeFiles/multicast.dir/src/main.cpp.o" \
+"CMakeFiles/multicast.dir/src/Message.cpp.o" \
+"CMakeFiles/multicast.dir/src/Chat.cpp.o"
 
 # External object files for target multicast
 multicast_EXTERNAL_OBJECTS =
 
+multicast: CMakeFiles/multicast.dir/src/Teste.cpp.o
+multicast: CMakeFiles/multicast.dir/src/Multicast.cpp.o
+multicast: CMakeFiles/multicast.dir/src/View.cpp.o
 multicast: CMakeFiles/multicast.dir/src/main.cpp.o
+multicast: CMakeFiles/multicast.dir/src/Message.cpp.o
+multicast: CMakeFiles/multicast.dir/src/Chat.cpp.o
 multicast: CMakeFiles/multicast.dir/build.make
 multicast: CMakeFiles/multicast.dir/link.txt
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/home/gautnote/Documents/Workspace/C++/Multicast_Totally_Ordered/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Linking CXX executable multicast"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/home/gautnote/Documents/Workspace/C++/Multicast_Totally_Ordered/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_7) "Linking CXX executable multicast"
 	$(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/multicast.dir/link.txt --verbose=$(VERBOSE)
 
 # Rule to build all files generated by this target.
@@ -99,7 +229,12 @@ CMakeFiles/multicast.dir/build: multicast
 
 .PHONY : CMakeFiles/multicast.dir/build
 
+CMakeFiles/multicast.dir/requires: CMakeFiles/multicast.dir/src/Teste.cpp.o.requires
+CMakeFiles/multicast.dir/requires: CMakeFiles/multicast.dir/src/Multicast.cpp.o.requires
+CMakeFiles/multicast.dir/requires: CMakeFiles/multicast.dir/src/View.cpp.o.requires
 CMakeFiles/multicast.dir/requires: CMakeFiles/multicast.dir/src/main.cpp.o.requires
+CMakeFiles/multicast.dir/requires: CMakeFiles/multicast.dir/src/Message.cpp.o.requires
+CMakeFiles/multicast.dir/requires: CMakeFiles/multicast.dir/src/Chat.cpp.o.requires
 
 .PHONY : CMakeFiles/multicast.dir/requires
 

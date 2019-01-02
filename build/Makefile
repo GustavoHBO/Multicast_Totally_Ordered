@@ -123,6 +123,141 @@ multicast/fast:
 	$(MAKE) -f CMakeFiles/multicast.dir/build.make CMakeFiles/multicast.dir/build
 .PHONY : multicast/fast
 
+src/Chat.o: src/Chat.cpp.o
+
+.PHONY : src/Chat.o
+
+# target to build an object file
+src/Chat.cpp.o:
+	$(MAKE) -f CMakeFiles/multicast.dir/build.make CMakeFiles/multicast.dir/src/Chat.cpp.o
+.PHONY : src/Chat.cpp.o
+
+src/Chat.i: src/Chat.cpp.i
+
+.PHONY : src/Chat.i
+
+# target to preprocess a source file
+src/Chat.cpp.i:
+	$(MAKE) -f CMakeFiles/multicast.dir/build.make CMakeFiles/multicast.dir/src/Chat.cpp.i
+.PHONY : src/Chat.cpp.i
+
+src/Chat.s: src/Chat.cpp.s
+
+.PHONY : src/Chat.s
+
+# target to generate assembly for a file
+src/Chat.cpp.s:
+	$(MAKE) -f CMakeFiles/multicast.dir/build.make CMakeFiles/multicast.dir/src/Chat.cpp.s
+.PHONY : src/Chat.cpp.s
+
+src/Message.o: src/Message.cpp.o
+
+.PHONY : src/Message.o
+
+# target to build an object file
+src/Message.cpp.o:
+	$(MAKE) -f CMakeFiles/multicast.dir/build.make CMakeFiles/multicast.dir/src/Message.cpp.o
+.PHONY : src/Message.cpp.o
+
+src/Message.i: src/Message.cpp.i
+
+.PHONY : src/Message.i
+
+# target to preprocess a source file
+src/Message.cpp.i:
+	$(MAKE) -f CMakeFiles/multicast.dir/build.make CMakeFiles/multicast.dir/src/Message.cpp.i
+.PHONY : src/Message.cpp.i
+
+src/Message.s: src/Message.cpp.s
+
+.PHONY : src/Message.s
+
+# target to generate assembly for a file
+src/Message.cpp.s:
+	$(MAKE) -f CMakeFiles/multicast.dir/build.make CMakeFiles/multicast.dir/src/Message.cpp.s
+.PHONY : src/Message.cpp.s
+
+src/Multicast.o: src/Multicast.cpp.o
+
+.PHONY : src/Multicast.o
+
+# target to build an object file
+src/Multicast.cpp.o:
+	$(MAKE) -f CMakeFiles/multicast.dir/build.make CMakeFiles/multicast.dir/src/Multicast.cpp.o
+.PHONY : src/Multicast.cpp.o
+
+src/Multicast.i: src/Multicast.cpp.i
+
+.PHONY : src/Multicast.i
+
+# target to preprocess a source file
+src/Multicast.cpp.i:
+	$(MAKE) -f CMakeFiles/multicast.dir/build.make CMakeFiles/multicast.dir/src/Multicast.cpp.i
+.PHONY : src/Multicast.cpp.i
+
+src/Multicast.s: src/Multicast.cpp.s
+
+.PHONY : src/Multicast.s
+
+# target to generate assembly for a file
+src/Multicast.cpp.s:
+	$(MAKE) -f CMakeFiles/multicast.dir/build.make CMakeFiles/multicast.dir/src/Multicast.cpp.s
+.PHONY : src/Multicast.cpp.s
+
+src/Teste.o: src/Teste.cpp.o
+
+.PHONY : src/Teste.o
+
+# target to build an object file
+src/Teste.cpp.o:
+	$(MAKE) -f CMakeFiles/multicast.dir/build.make CMakeFiles/multicast.dir/src/Teste.cpp.o
+.PHONY : src/Teste.cpp.o
+
+src/Teste.i: src/Teste.cpp.i
+
+.PHONY : src/Teste.i
+
+# target to preprocess a source file
+src/Teste.cpp.i:
+	$(MAKE) -f CMakeFiles/multicast.dir/build.make CMakeFiles/multicast.dir/src/Teste.cpp.i
+.PHONY : src/Teste.cpp.i
+
+src/Teste.s: src/Teste.cpp.s
+
+.PHONY : src/Teste.s
+
+# target to generate assembly for a file
+src/Teste.cpp.s:
+	$(MAKE) -f CMakeFiles/multicast.dir/build.make CMakeFiles/multicast.dir/src/Teste.cpp.s
+.PHONY : src/Teste.cpp.s
+
+src/View.o: src/View.cpp.o
+
+.PHONY : src/View.o
+
+# target to build an object file
+src/View.cpp.o:
+	$(MAKE) -f CMakeFiles/multicast.dir/build.make CMakeFiles/multicast.dir/src/View.cpp.o
+.PHONY : src/View.cpp.o
+
+src/View.i: src/View.cpp.i
+
+.PHONY : src/View.i
+
+# target to preprocess a source file
+src/View.cpp.i:
+	$(MAKE) -f CMakeFiles/multicast.dir/build.make CMakeFiles/multicast.dir/src/View.cpp.i
+.PHONY : src/View.cpp.i
+
+src/View.s: src/View.cpp.s
+
+.PHONY : src/View.s
+
+# target to generate assembly for a file
+src/View.cpp.s:
+	$(MAKE) -f CMakeFiles/multicast.dir/build.make CMakeFiles/multicast.dir/src/View.cpp.s
+.PHONY : src/View.cpp.s
+
 src/main.o: src/main.cpp.o
 
 .PHONY : src/main.o
@@ -159,6 +294,21 @@ help:
 	@echo "... edit_cache"
 	@echo "... rebuild_cache"
 	@echo "... multicast"
+	@echo "... src/Chat.o"
+	@echo "... src/Chat.i"
+	@echo "... src/Chat.s"
+	@echo "... src/Message.o"
+	@echo "... src/Message.i"
+	@echo "... src/Message.s"
+	@echo "... src/Multicast.o"
+	@echo "... src/Multicast.i"
+	@echo "... src/Multicast.s"
+	@echo "... src/Teste.o"
+	@echo "... src/Teste.i"
+	@echo "... src/Teste.s"
+	@echo "... src/View.o"
+	@echo "... src/View.i"
+	@echo "... src/View.s"
 	@echo "... src/main.o"
 	@echo "... src/main.i"
 	@echo "... src/main.s"

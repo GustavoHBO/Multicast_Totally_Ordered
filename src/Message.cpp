@@ -28,22 +28,20 @@ char *Message::getDestination()
     return this->destination;
 }
 
-void Message::setMessage(char *message)
+void Message::setDate(char *date)
 {
-    this->message = message;
+    this->date = date;
 }
 
-char *Message::getMessage()
+char *Message::getDate()
 {
-    return this->message;
+    return this->date;
 }
 
-void Message::setMessage(char *message)
-{
-    this->message = message;
+void Message::setMessage(char *msg){
+    this->message = msg;
 }
 
-char *Message::getMessage()
-{
+char *Message::getMessage(){
     return this->message;
 }

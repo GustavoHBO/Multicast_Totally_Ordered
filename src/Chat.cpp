@@ -7,7 +7,6 @@ Chat::Chat(/* args */)
 
 Chat::~Chat()
 {
-    delete &messages;
 }
 
 void Chat::addMessage(Message m)
