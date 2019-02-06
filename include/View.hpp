@@ -1,14 +1,17 @@
 #ifndef VIEW_H
 #define VIEW_H
+#include <gtk/gtk.h>
+
 
 class View
 {
   private:
-    /* data */
+    int argc;
+    char ***argv;
   public:
-    View(/* args */);
+    View(int argc, char *argv[]);
     ~View();
-    int startChat(int argc, char *argv[]);
+    int startChat(GtkWidget *widget, gpointer data);
 };
 
 

@@ -13,6 +13,8 @@ map
 -
 Message.hpp
 ../include/Message.hpp
+Multicast.hpp
+../include/Multicast.hpp
 
 ../include/Message.hpp
 iostream
@@ -39,10 +41,18 @@ unistd.h
 ../include/Teste.hpp
 
 ../include/View.hpp
+gtk/gtk.h
+-
 
 /home/gautnote/Documents/Workspace/C++/Multicast_Totally_Ordered/src/Chat.cpp
+iostream
+-
+thread
+-
 Chat.hpp
 /home/gautnote/Documents/Workspace/C++/Multicast_Totally_Ordered/src/Chat.hpp
+Multicast.hpp
+/home/gautnote/Documents/Workspace/C++/Multicast_Totally_Ordered/src/Multicast.hpp
 
 /home/gautnote/Documents/Workspace/C++/Multicast_Totally_Ordered/src/Message.cpp
 Message.hpp
@@ -51,6 +61,8 @@ Message.hpp
 /home/gautnote/Documents/Workspace/C++/Multicast_Totally_Ordered/src/Multicast.cpp
 Multicast.hpp
 /home/gautnote/Documents/Workspace/C++/Multicast_Totally_Ordered/src/Multicast.hpp
+iostream
+-
 
 /home/gautnote/Documents/Workspace/C++/Multicast_Totally_Ordered/src/Teste.cpp
 iostream

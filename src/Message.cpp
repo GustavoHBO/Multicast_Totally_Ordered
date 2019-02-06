@@ -8,40 +8,40 @@ Message::~Message()
 {
 }
 
-void Message::setSender(char *sender)
+void Message::set_sender(char *sender)
 {
     this->sender = sender;
 }
 
-char *Message::getSender()
+char *Message::get_sender()
 {
     return this->sender;
 }
 
-void Message::setDestination(char *destination)
+void Message::set_destination(char *destination)
 {
     this->destination = destination;
 }
 
-char *Message::getDestination()
+char *Message::get_destination()
 {
     return this->destination;
 }
 
-void Message::setDate(char *date)
+void Message::set_date(char *date)
 {
     this->date = date;
 }
 
-char *Message::getDate()
+char *Message::get_date()
 {
     return this->date;
 }
 
-void Message::setMessage(char *msg){
+void Message::set_message(char *msg){
     this->message = msg;
 }
 
-char *Message::getMessage(){
+char *Message::get_message(){
     return this->message;
 }

@@ -15,14 +15,14 @@ class Message
   public:
     Message(/* args */);
     ~Message();
-    void setSender(char *sender);
-    char *getSender();
-    void setDestination(char *destination);
-    char *getDestination();
-    void setMessage(char *message);
-    char *getMessage();
-    void setDate(char *date);
-    char *getDate();
+    void set_sender(char *sender);
+    char *get_sender();
+    void set_destination(char *destination);
+    char *get_destination();
+    void set_message(char *message);
+    char *get_message();
+    void set_date(char *date);
+    char *get_date();
 };
 
 #endif

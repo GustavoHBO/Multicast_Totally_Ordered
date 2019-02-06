@@ -12,6 +12,8 @@ public:
   void teste_01();
   void teste_02();
   void teste_03(int argc, char *argv[]);
+  void teste_04(int argc, char *argv[]);
+  void teste_05();
 };
 
 #endif

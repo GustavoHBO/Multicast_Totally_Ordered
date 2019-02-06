@@ -18,17 +18,18 @@ private:
   static const int MIN_PORT = 1024;
   static const int MAX_PORT = 65535;
   static const int MAX_BUFFER_SIZE = 256;
-  char *ip_group;
+  char *ip;
   int port, addrlen, nbytes;
   struct sockaddr_in address;
   struct ip_mreq mreq;
   int socketNumber;
-  char buffer_data[256];
+  char buffer_data[MAX_BUFFER_SIZE];
 
 public:
+  Multicast();
   Multicast(char *ip, int port);
   ~Multicast();
-  int sendMessage(char *message);
-  char *receiveMessage();
+  int send_message(char *message);
+  char *receive_message();
 };
 #endif

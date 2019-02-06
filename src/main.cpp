@@ -4,7 +4,28 @@
 int main(int argc, char *argv[])
 {
   /* code */
-  Teste t;
-  t.teste_03(argc, argv);
+
+  if (argc > 0)
+  {
+    char arg = argv[1][0];
+    if (arg == '1')
+    {
+      Teste t;
+      t.teste_00();
+    }
+    else if (arg == '2')
+    {
+      Teste t;
+      t.teste_01();
+    }
+    else if (arg == '3')
+    {
+      Teste t;
+      t.teste_04(argc, argv);
+    } else if(arg == '4'){
+      Teste t;
+      t.teste_05();
+    }
+  }
   return 0;
 }
