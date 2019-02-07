@@ -6,6 +6,12 @@ CMakeFiles/multicast.dir/src/Chat.cpp.o: ../include/Message.hpp
 CMakeFiles/multicast.dir/src/Chat.cpp.o: ../include/Multicast.hpp
 CMakeFiles/multicast.dir/src/Chat.cpp.o: ../src/Chat.cpp
 
+CMakeFiles/multicast.dir/src/Controller.cpp.o: ../include/Chat.hpp
+CMakeFiles/multicast.dir/src/Controller.cpp.o: ../include/Controller.hpp
+CMakeFiles/multicast.dir/src/Controller.cpp.o: ../include/Message.hpp
+CMakeFiles/multicast.dir/src/Controller.cpp.o: ../include/Multicast.hpp
+CMakeFiles/multicast.dir/src/Controller.cpp.o: ../src/Controller.cpp
+
 CMakeFiles/multicast.dir/src/Message.cpp.o: ../include/Message.hpp
 CMakeFiles/multicast.dir/src/Message.cpp.o: ../src/Message.cpp
 
@@ -13,6 +19,7 @@ CMakeFiles/multicast.dir/src/Multicast.cpp.o: ../include/Multicast.hpp
 CMakeFiles/multicast.dir/src/Multicast.cpp.o: ../src/Multicast.cpp
 
 CMakeFiles/multicast.dir/src/Teste.cpp.o: ../include/Chat.hpp
+CMakeFiles/multicast.dir/src/Teste.cpp.o: ../include/Controller.hpp
 CMakeFiles/multicast.dir/src/Teste.cpp.o: ../include/Message.hpp
 CMakeFiles/multicast.dir/src/Teste.cpp.o: ../include/Multicast.hpp
 CMakeFiles/multicast.dir/src/Teste.cpp.o: ../include/Teste.hpp

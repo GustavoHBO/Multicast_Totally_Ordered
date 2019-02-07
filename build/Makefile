@@ -150,6 +150,33 @@ src/Chat.cpp.s:
 	$(MAKE) -f CMakeFiles/multicast.dir/build.make CMakeFiles/multicast.dir/src/Chat.cpp.s
 .PHONY : src/Chat.cpp.s
 
+src/Controller.o: src/Controller.cpp.o
+
+.PHONY : src/Controller.o
+
+# target to build an object file
+src/Controller.cpp.o:
+	$(MAKE) -f CMakeFiles/multicast.dir/build.make CMakeFiles/multicast.dir/src/Controller.cpp.o
+.PHONY : src/Controller.cpp.o
+
+src/Controller.i: src/Controller.cpp.i
+
+.PHONY : src/Controller.i
+
+# target to preprocess a source file
+src/Controller.cpp.i:
+	$(MAKE) -f CMakeFiles/multicast.dir/build.make CMakeFiles/multicast.dir/src/Controller.cpp.i
+.PHONY : src/Controller.cpp.i
+
+src/Controller.s: src/Controller.cpp.s
+
+.PHONY : src/Controller.s
+
+# target to generate assembly for a file
+src/Controller.cpp.s:
+	$(MAKE) -f CMakeFiles/multicast.dir/build.make CMakeFiles/multicast.dir/src/Controller.cpp.s
+.PHONY : src/Controller.cpp.s
+
 src/Message.o: src/Message.cpp.o
 
 .PHONY : src/Message.o
@@ -297,6 +324,9 @@ help:
 	@echo "... src/Chat.o"
 	@echo "... src/Chat.i"
 	@echo "... src/Chat.s"
+	@echo "... src/Controller.o"
+	@echo "... src/Controller.i"
+	@echo "... src/Controller.s"
 	@echo "... src/Message.o"
 	@echo "... src/Message.i"
 	@echo "... src/Message.s"

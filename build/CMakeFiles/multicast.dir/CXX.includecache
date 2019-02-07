@@ -16,6 +16,10 @@ Message.hpp
 Multicast.hpp
 ../include/Multicast.hpp
 
+../include/Controller.hpp
+Chat.hpp
+../include/Chat.hpp
+
 ../include/Message.hpp
 iostream
 -
@@ -54,6 +58,12 @@ Chat.hpp
 Multicast.hpp
 /home/gautnote/Documents/Workspace/C++/Multicast_Totally_Ordered/src/Multicast.hpp
 
+/home/gautnote/Documents/Workspace/C++/Multicast_Totally_Ordered/src/Controller.cpp
+thread
+-
+Controller.hpp
+/home/gautnote/Documents/Workspace/C++/Multicast_Totally_Ordered/src/Controller.hpp
+
 /home/gautnote/Documents/Workspace/C++/Multicast_Totally_Ordered/src/Message.cpp
 Message.hpp
 /home/gautnote/Documents/Workspace/C++/Multicast_Totally_Ordered/src/Message.hpp
@@ -67,12 +77,14 @@ iostream
 /home/gautnote/Documents/Workspace/C++/Multicast_Totally_Ordered/src/Teste.cpp
 iostream
 -
+Teste.hpp
+/home/gautnote/Documents/Workspace/C++/Multicast_Totally_Ordered/src/Teste.hpp
+Controller.hpp
+/home/gautnote/Documents/Workspace/C++/Multicast_Totally_Ordered/src/Controller.hpp
 Multicast.hpp
 /home/gautnote/Documents/Workspace/C++/Multicast_Totally_Ordered/src/Multicast.hpp
 Chat.hpp
 /home/gautnote/Documents/Workspace/C++/Multicast_Totally_Ordered/src/Chat.hpp
-Teste.hpp
-/home/gautnote/Documents/Workspace/C++/Multicast_Totally_Ordered/src/Teste.hpp
 View.hpp
 /home/gautnote/Documents/Workspace/C++/Multicast_Totally_Ordered/src/View.hpp
 

@@ -6,6 +6,12 @@ CMakeFiles/multicast.dir/src/Chat.cpp.o
  ../include/Message.hpp
  ../include/Multicast.hpp
  /home/gautnote/Documents/Workspace/C++/Multicast_Totally_Ordered/src/Chat.cpp
+CMakeFiles/multicast.dir/src/Controller.cpp.o
+ ../include/Chat.hpp
+ ../include/Controller.hpp
+ ../include/Message.hpp
+ ../include/Multicast.hpp
+ /home/gautnote/Documents/Workspace/C++/Multicast_Totally_Ordered/src/Controller.cpp
 CMakeFiles/multicast.dir/src/Message.cpp.o
  ../include/Message.hpp
  /home/gautnote/Documents/Workspace/C++/Multicast_Totally_Ordered/src/Message.cpp
@@ -14,6 +20,7 @@ CMakeFiles/multicast.dir/src/Multicast.cpp.o
  /home/gautnote/Documents/Workspace/C++/Multicast_Totally_Ordered/src/Multicast.cpp
 CMakeFiles/multicast.dir/src/Teste.cpp.o
  ../include/Chat.hpp
+ ../include/Controller.hpp
  ../include/Message.hpp
  ../include/Multicast.hpp
  ../include/Teste.hpp

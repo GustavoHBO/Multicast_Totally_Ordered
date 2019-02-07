@@ -5,6 +5,7 @@ file(REMOVE_RECURSE
   "CMakeFiles/multicast.dir/src/main.cpp.o"
   "CMakeFiles/multicast.dir/src/Message.cpp.o"
   "CMakeFiles/multicast.dir/src/Chat.cpp.o"
+  "CMakeFiles/multicast.dir/src/Controller.cpp.o"
   "multicast.pdb"
   "multicast"
 )
