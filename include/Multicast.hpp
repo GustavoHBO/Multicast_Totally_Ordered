@@ -23,7 +23,7 @@ private:
   struct sockaddr_in address;
   struct ip_mreq mreq;
   int socketNumber;
-  char buffer_data[MAX_BUFFER_SIZE];
+  char *buffer_data;
 
 public:
   Multicast();

@@ -14,8 +14,8 @@ Multicast::Multicast(char *ip, int port)
 {
     char ip_default[] = "224.0.0.1";
     int port_default = 65534;
-    this->ip = ip ;
-    this->port = port ;
+    this->ip = ip;
+    this->port = port;
 
     /* create what looks like an ordinary UDP socket */
     if ((socketNumber = socket(AF_INET, SOCK_DGRAM, 0)) < 0)
@@ -68,6 +68,7 @@ int Multicast::send_message(char *msg)
 char *Multicast::receive_message()
 {
     addrlen = sizeof(address);
+    buffer_data = (char *)calloc(MAX_BUFFER_SIZE, sizeof(char));
     if ((nbytes = recvfrom(socketNumber, buffer_data, MAX_BUFFER_SIZE, 0, (struct sockaddr *)&address, (socklen_t *)&addrlen)) < 0)
     {
         perror("recvfrom");

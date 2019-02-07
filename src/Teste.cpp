@@ -1,7 +1,9 @@
 #include <iostream>
+
+#include "Teste.hpp"
+#include "Controller.hpp"
 #include "Multicast.hpp"
 #include "Chat.hpp"
-#include "Teste.hpp"
 #include "View.hpp"
 
 Teste::Teste()
@@ -14,7 +16,7 @@ Teste::~Teste()
 
 void Teste::teste_00()
 {
-    char msg[] = "Testando a execução";
+    char msg[100];
     char ip[] = "224.0.0.1";
     Multicast m(ip, 65534);
     while (true)
@@ -47,7 +49,7 @@ void Teste::teste_02()
 
 void Teste::teste_03(int argc, char *argv[])
 {
-    View v(argc, argv);
+    // View v(argc, argv);
 }
 
 void Teste::teste_04(int argc, char *argv[])
@@ -65,6 +67,6 @@ void Teste::teste_04(int argc, char *argv[])
 void Teste::teste_05()
 {
     char ip[] = "224.0.0.1";
-    Chat c(ip, 65534);
-    c.receive_message();
+    Controller ctrl(ip, 65534);
+    ctrl.receive();
 }

@@ -25,7 +25,6 @@ public:
   void add_message(Message m);
   Message *get_message(int id);
   void send_message(Message m);
-  void receive_message();
   void add_operation();
   long long unsigned int get_operations();
   void set_operations(long long unsigned int operations);

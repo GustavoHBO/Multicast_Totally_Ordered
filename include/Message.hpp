@@ -13,7 +13,7 @@ class Message
     char *date;
 
   public:
-    Message(/* args */);
+    Message();
     ~Message();
     void set_sender(char *sender);
     char *get_sender();

@@ -46,7 +46,6 @@ static void start_chat(GtkWidget *widget, gpointer data)
     g_signal_connect(app, "activate", G_CALLBACK(start_window_chat), NULL);
     int argc = 1;
     char *argv[1];
-    argv[1] = "./multicast";
     status = g_application_run(G_APPLICATION(app), argc, argv);
     g_object_unref(app);
 }

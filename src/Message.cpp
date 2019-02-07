@@ -1,6 +1,6 @@
 #include "Message.hpp"
 
-Message::Message(/* args */)
+Message::Message()
 {
 }
 
