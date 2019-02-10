@@ -70,3 +70,36 @@ void Teste::teste_05()
     Controller ctrl(ip, 65534);
     ctrl.receive();
 }
+
+// char msg[] = "mensagem";
+
+void me(Message *m3)
+{
+    Message m;
+    Message m2;
+    // char msg[] = "mensagem";
+    char *msg = (char *)calloc(10, sizeof(char));
+    msg[0] = 'o';
+    msg[1] = 'i';
+    msg[2] = '\0';
+    m.set_message(msg);
+    m2 = m;
+    std::cout << "Mensagem: '" << m.get_message() << "'" << std::endl;
+    std::cout << "Mensagem: '" << m2.get_message() << "'" << std::endl;
+    msg[0] = 'o';
+    m2.set_message(msg);
+    std::cout << "Mensagem: '" << m.get_message() << "'" << std::endl;
+    std::cout << "Mensagem: '" << m.get_message() << "'" << std::endl;
+    (m3)->set_message(msg);
+    std::cout << "Mensagem: '" << (m3)->get_message() << "'" << std::endl;
+}
+
+void Teste::teste_06()
+{
+    Message m, *m_ptr;
+    m_ptr = &m;
+    m_ptr->set_message("eitha");
+    std::cout << "Mensagem aqui: '" << m.get_message() << "'" << std::endl;
+    me(&m);
+    std::cout << "Mensagem aqui: '" << m.get_message() << "'" << std::endl;
+}

@@ -3,9 +3,7 @@
 
 int main(int argc, char *argv[])
 {
-  /* code */
-
-  if (argc > 0)
+  if (argc > 1)
   {
     char arg = argv[1][0];
     if (arg == '1')
@@ -22,10 +20,17 @@ int main(int argc, char *argv[])
     {
       Teste t;
       t.teste_04(argc, argv);
-    } else if(arg == '4'){
+    }
+    else if (arg == '4')
+    {
       Teste t;
       t.teste_05();
     }
+    else if (arg == '5')
+    {
+      Teste t;
+      t.teste_06();
+    }
   }
-  return 0;
+  return 1;
 }

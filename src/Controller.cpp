@@ -2,11 +2,15 @@
 
 #include "Controller.hpp"
 
-Message create_message(char *data)
+/*
+* This method create the message from data.
+*/
+void split_data(char *data, char ***data_out)
 {
-    Message m;
+    char ***ptr = data_out;
+    *data_out = (char **)calloc(10, sizeof(char *));
     std::cout << "Criando mensagem" << std::endl;
-    int last = 0;
+    int qt_data = 0, last = 0;
     for (int i = 4; i < strlen(data); i++)
     {
         // Search the string separator, |&|
@@ -26,22 +30,43 @@ Message create_message(char *data)
             for (int j = 0; j < i - 4 - last; j++) // the condition stop in j < i -4 to remove the string split and the final character.
             {
                 c[j] = data[j + 4 + last];
-                c[j + 1] = '\0';// add the final character. Put an 'if' there can be more heavy.
+                c[j + 1] = '\0'; // add the final character. Put an 'if' there can be more heavy.
             }
-            i += 3;// Increment the i to jump next character after the string separator.
+            i += 3;                // Increment the i to jump next character after the string separator.
             last += strlen(c) + 3; // Save the length of data + length of the string separator.
             std::cout << "Mensagem encontrada: " << c << std::endl;
             std::cout << "Tamanho da mensagem encontrada: " << strlen(c) << std::endl;
-            m.set_message(c);
+            **ptr = (char *)malloc(strlen(c) * sizeof(char));
+            std::cout << "Alocando memória, endereço: " << &**ptr << std::endl;
+
+            strcpy(**ptr, c);
+            qt_data++;
+            std::cout << "Mensagem encontrada: " << **ptr << std::endl;
+            std::cout << "Endereço de p: " << &ptr << std::endl;
+            std::cout << "Endereço de p: " << ptr << std::endl;
+            std::cout << "Endereço que p aponta: " << *ptr << std::endl;
+            std::cout << "Endereço de p1: " << &*ptr << std::endl;
+            // std::cout << "Endereço que p1 aponta: " << **ptr << std::endl;
+            std::cout << "Endereço de data_out: " << &data_out << std::endl;
+            std::cout << "Endereço de data_out: " << data_out << std::endl;
+            std::cout << "Endereço que data_out aponta: " << *data_out << std::endl;
+            std::cout << "Endereço de d1: " << &*data_out << std::endl;
+            // std::cout << "Endereço que d1 aponta: " << **data_out << std::endl;
+            if (i + 4 < strlen(data))
+            {
+                *ptr += sizeof(char *);
+            }
+            else
+            {
+                *ptr -= sizeof(char *) * (qt_data - 1);
+            }
         }
     }
-
-    return m;
 }
 
 void process_data(char *data, Chat *c)
 {
-    std::cout << c->get_operations() << std::endl;
+    std::cout << c->get_operations().size() << std::endl;
     std::cout << "Mensagem: \'" << data << "\'" << std::endl;
     std::cout << "Tamanho: " << strlen(data) << std::endl;
 
@@ -54,15 +79,39 @@ void process_data(char *data, Chat *c)
     {
         if (data[2] == '0')
         {
-            c->add_operation();
-
-            std::cout << "Sincronizar base de dados!" << std::endl;
+            //c->add_operation("00");// Not necessary add the operation of synchronization
+            for (int i = 0; i < c->get_operations().size(); i++)
+            {
+                const char *operation;
+                operation = c->get_operations()[i];
+                std::cout << operation << std::endl;
+                if (operation[0] == '1' && operation[1] == '0')
+                {
+                    Message *m;
+                    m = c->get_message(i);
+                    if (m != NULL)
+                    {
+                        std::cout << "Existe mensagem" << std::endl;
+                        std::cout << m->get_message() << std::endl;
+                    }
+                }
+            }
         }
     }
     else if (data[1] == '1') // Receber dados
     {
-        Message m;
-        create_message(data);
+        if (data[2] == '0')
+        {
+            Message m;
+            char **msg;
+            std::cout << "Mensagem gravada: '" << &msg << "'" << std::endl;
+            split_data(data, &msg);
+            // msg += 8;
+            m.set_message(*msg);
+            std::cout << "Mensagem gravada: '" << m.get_message() << "'" << std::endl;
+            c->add_message(m);
+            c->add_operation("10");
+        }
     }
     else if (data[1] == '2') // Operações
     {

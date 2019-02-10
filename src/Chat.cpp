@@ -7,7 +7,6 @@
 Chat::Chat()
 {
     qnt_message = 0;
-    operations = 0;
     server = false;
 }
 
@@ -25,15 +24,20 @@ Chat::~Chat()
 
 void Chat::add_message(Message m)
 {
+    if(&m != NULL && m.get_message() != NULL)
     messages[qnt_message++] = m;
 }
 
 Message *Chat::get_message(int i)
 {
-    if (messages.find(i) == messages.end())
+    auto message = messages.find(i);
+    if (message == messages.end())
     {
+        std::cout << "nao existe mensagem aqui" << std::endl;
         return NULL;
     }
+    std::cout << "existe mensagem aqui" << std::endl;
+    std::cout << message->first << std::endl;
     return &messages.find(i)->second;
 }
 
@@ -46,12 +50,12 @@ void Chat::send_message(Message m)
     //this->multicast->send_message(msg);
 }
 
-void Chat::add_operation()
+void Chat::add_operation(const char *op)
 {
-    this->operations++;
+    this->operations[this->operations.size()] = op;
 }
 
-long long unsigned Chat::get_operations()
+std::map<int, const char *> Chat::get_operations()
 {
     return this->operations;
 }
