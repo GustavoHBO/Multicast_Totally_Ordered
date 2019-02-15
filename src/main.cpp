@@ -25,6 +25,7 @@ int main(int argc, char *argv[])
     {
       Teste t;
       t.teste_05();
+      return 0;
     }
     else if (arg == '5')
     {

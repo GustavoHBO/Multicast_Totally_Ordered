@@ -68,7 +68,8 @@ void Teste::teste_05()
 {
     char ip[] = "224.0.0.1";
     Controller ctrl(ip, 65534);
-    ctrl.receive();
+    bool b = ctrl.verify_master();
+    //ctrl.receive();
 }
 
 // char msg[] = "mensagem";
@@ -98,7 +99,8 @@ void Teste::teste_06()
 {
     Message m, *m_ptr;
     m_ptr = &m;
-    m_ptr->set_message("eitha");
+    char msg[] = "eitha";
+    m_ptr->set_message(msg);
     std::cout << "Mensagem aqui: '" << m.get_message() << "'" << std::endl;
     me(&m);
     std::cout << "Mensagem aqui: '" << m.get_message() << "'" << std::endl;

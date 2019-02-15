@@ -16,7 +16,6 @@ private:
   std::map<int, const char*> operations;
   Multicast multicast;
   int qnt_message;
-  bool server;
 
 public:
   Chat();

@@ -7,7 +7,6 @@
 Chat::Chat()
 {
     qnt_message = 0;
-    server = false;
 }
 
 Chat::Chat(char ip[], int port)
@@ -15,7 +14,6 @@ Chat::Chat(char ip[], int port)
     this->ip = ip;
     this->port = port;
     qnt_message = 0;
-    server = false;
 }
 
 Chat::~Chat()
@@ -33,11 +31,11 @@ Message *Chat::get_message(int i)
     auto message = messages.find(i);
     if (message == messages.end())
     {
-        std::cout << "nao existe mensagem aqui" << std::endl;
+        // std::cout << "nao existe mensagem aqui" << std::endl;
         return NULL;
     }
-    std::cout << "existe mensagem aqui" << std::endl;
-    std::cout << message->first << std::endl;
+    // std::cout << "existe mensagem aqui" << std::endl;
+    // std::cout << message->first << std::endl;
     return &messages.find(i)->second;
 }
 
